@@ -7,32 +7,32 @@
 
 @font-face {
     font-family: monsterat;
-    src: url(../font/monsterat/Montserrat-VariableFont_wght.ttf);
+    src: url(font/monsterat/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
     font-family:fjala;
-    src: url(../font/Fjalla_One/FjallaOne-Regular.ttf);
+    src: url(font/Fjalla_One/FjallaOne-Regular.ttf);
 }
 @font-face {
     font-family:calvier;
-    src: url(../font/calvier/Calvier.ttf);
+    src: url(font/calvier/Calvier.ttf);
 }
 @font-face {
     font-family:milgran;
-    src: url(../font/milgran/MilgranRegular-jE0MG.ttf);
+    src: url(font/milgran/MilgranRegular-jE0MG.ttf);
 }
 
 @font-face {
     font-family:helvetica;
-    src: url(../font/helvetica/FreeSansBold.otf);
+    src: url(font/helvetica/FreeSansBold.otf);
 }
 @font-face {
     font-family:helvetical;
-    src: url(../font/helvetica/HelveticaNeueLTPro-Md.otf);
+    src: url(font/helvetica/HelveticaNeueLTPro-Md.otf);
 }
 @font-face {
     font-family:helvetica-r;
-    src: url(../font/helvetica-1/Helvetica.ttf);
+    src: url(font/helvetica-1/Helvetica.ttf);
 }
 
 
@@ -196,7 +196,7 @@ button{
     #homepage{
         margin-top: 45px;
         height:600px;
-        background: url(../img/shri-3Ozm5eOVq_M-unsplash.jpg);
+        background: url(img/shri-3Ozm5eOVq_M-unsplash.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
