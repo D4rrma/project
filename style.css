@@ -43,12 +43,15 @@ a{
 button{
     cursor: pointer;
 }
+body{
+    background: #000;
+}
 
 
 
 
 
-@media only screen and (max-width : 576px){
+@media only screen and (min-width : 769px){
     .container{
         background:#0C0B10;
     }
@@ -189,13 +192,388 @@ button{
     }
 
 
+    .container-homepage{
+        gap: 20px;
+        height:auto;
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1fr;
+        background: #000;
+    }
+    #homepage{
+            display: grid;
+            grid-area: homepage;
+            grid-column: 1/span 2;
+            grid-row: 1;
+            background: url(img/shri-3Ozm5eOVq_M-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+    
+        #homepage .home{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #homepage .home h1{
+            margin-top: 30px;
+            font-family: helvetical;
+            font-size: 35px;
+            font-weight: bolder;
+            color: rgb(233, 233, 233);
+            text-transform: uppercase;
+            padding: 20px;
+        }
+    
+        #homepage .home h3{
+            font-family: fjala;
+            font-weight: 300;
+            color: rgb(233, 233, 233);
+            text-transform: capitalize;
+    
+        }
+    
+        #homepage .home p{
+            padding: 20px;
+            text-align: center;
+            font-family: monsterat;
+            color: rgb(233, 233, 233);
+            font-size:12px;
+        }
+    
+        #homepage .home a{
+            font-family: helvetica-r;
+            text-transform: uppercase;
+            position: absolute;
+            top: 350px;
+            background: white;
+            width:40%;
+            text-align: center;
+            line-height: 50px;
+            height: 50px;
+            font-size: 14px;
+            color: #222;
+    }
 
 
+
+    .preview{
+        grid-column:3;
+        grid-row: 1;
+        grid-area: preview;
+        background:#0C0B10;
+        display: grid;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .preview .img img{
+        display: none;
+    }
+    .preview .img{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+        height: 270px;
+    }
+
+    .preview .img:first-child{
+        background: url(img/bryan-natanael-V_ZgV8UuL3M-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        flex: 0 0 33.3%;
+    }
+    .preview .img:nth-child(2){
+        background: url(img/raphael-nogueira-NvSA7oDcmWU-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        flex: 0 0 33.3%;
+    }
+    .preview .img:nth-child(3){
+        background: url(img/pic1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        flex: 0 0 33.3%;
+    }
+
+    .preview .img h5{
+        font-size: calc(10px + 1vw);
+        text-align: center;
+        color: #fff;
+        font-family:helvetica;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .preview .img a{
+        font-family: helvetica-r;
+        color: white;
+        text-transform: capitalize;
+        font-size: 12px;
+    }
+    .slideshow{
+        display: none;
+    }
+
+
+    .product{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        background: rgb(20, 20, 92);
+    }
+
+    figure{
+        position: relative;
+        display: flex;
+        width: 33.3%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure img{
+        width: 100%;
+        filter: brightness(70%);
+        filter: drop-shadow(0 4px 8px rgba(0,0,0,.7));
+        transition: all .5s;
+
+    }
+
+    figure figcaption{
+        font-family: helvetica-r;
+        color: white;
+    }
+    img:hover{
+        filter: brightness(100%);
+    }
+
+
+        /* footer */
+
+        .footer{
+            height: 300px;
+            background:#0C0B10;
+        }
+    
+        .footer h1{
+            padding: 50px;
+            font-family: helvetical;
+            text-transform: uppercase;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+    
+        .footer .row{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            background:#0C0B10;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            border-top: 0.25px solid rgba(255, 255, 255, 0.281);
+           
+        }
+    
+        .footer .row h2{
+            color: white;
+            font-family: helvetica;
+            text-transform: uppercase;
+            font-size: medium;
+        }
+    
+        .footer .column{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+    
+        .footer .column div{
+            width: 30px;
+            height: 30px;
+            position: relative;
+        }
+    
+        .footer .column div img{
+            position: absolute;
+            width: 100%;
+        }
+    
+        footer{
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+            font-family: helvetica-r;
+            text-align: center;
+            border-top: 0.25px solid rgba(255, 255, 255, 0.281);
+            padding: 30px 0 10px 0;
+            text-transform: capitalize;
+            background:#0C0B10 ;
+        }
+}
+
+@media only screen and (max-width : 768px){
+    .container{
+        background:#0C0B10;
+    }
+    nav{
+        z-index: 10;
+        top: 0;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height:45px;
+        justify-content: center;
+        align-items: center;
+        background:#0C0B10;
+    }
+    nav.on{
+        background: #333;
+    }
+
+    .logo{
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+    .logo img{
+        width: 100%;
+    }
+
+    .header{
+        display: flex;
+    }
+    .header a{
+        font-size: 20px;
+        font-family: calvier;
+        font-weight: bold;
+        color: white;
+    }
+
+    .header a.on{
+        color: white;
+    }
+
+
+     /* menu btn */
+    #btn{
+        top: 5px;
+        right: 10px;
+        position: absolute;
+        display: flex;
+        width: 35px;
+        height: 35px;
+        background:#0C0B10 ;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+    #btn::after{
+        transition: all .4s;
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 2px;
+        background: white;
+        box-shadow: 0 8px 0 #fff;
+    }
+    #btn::before{
+        transition: all .4s;
+        background: white;
+        transform: translateY(-8px);
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 2px;
+    }
+
+    .on#btn::before{
+        transform: rotate(45deg);
+        background: white;
+    }
+    .on#btn::after{
+        transform: rotate(-45deg);
+        box-shadow: 0 0 0 0;
+        background: white;
+    }
+    .on#btn{
+        background: #333;
+    }
+
+
+    /* menu btn end*/
+
+
+    #nav.on{
+        display: flex;
+    }
+
+    ul{
+        gap: 40px;
+        display:none;
+        top: 45px;
+        position: fixed;
+        height: 100vh;
+        justify-content: flex-start;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        background: #333;
+    }
+    ul li:first-child{
+        margin-top: 60px;
+    }
+
+
+    ul li a{
+        font-weight: 200;
+        padding: 20px;
+        font-size: 14px;
+        font-family:helvetical;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    ul li .logo{
+        display: flex;
+        width: 80px;
+        height: 80px;
+    }
+    ul li .logo a{
+        padding: 0;
+    }
+
+    ul li a img{
+        width: 100%;
+    }
+
+    ul li a:hover{
+        color:rgba(255, 255, 255, 0.281) ;
+    }
 
     /* homepage */
     #homepage{
         margin-top: 45px;
-        height:600px;
+        height:calc(600px + 20vw);
         background: url(img/shri-3Ozm5eOVq_M-unsplash.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -259,13 +637,14 @@ button{
         margin-top: 100px;
     }
     .preview .img{
+        
         position: relative;
         display: flex;
         justify-content: center;
-        height: 600px;
     }
 
     .preview .img img{
+        display: flex;
         width: 100%;
         filter: brightness(70%);
     }
@@ -273,7 +652,7 @@ button{
     .preview .img h5{
         font-size: 20px;
         position: absolute;
-        top: 40px;
+        top: 50px;
         color: #fff;
         font-family:helvetica;
         text-transform: uppercase;
@@ -282,7 +661,7 @@ button{
 
     .preview .img a{
         position: absolute;
-        top: 70px;
+        top: 80px;
         font-family: helvetica-r;
         color: white;
         text-transform: capitalize;
@@ -290,16 +669,20 @@ button{
     }
 
 
+/* product */
+.product{
+    display: none;
+}
 
     /* slideshow */
     .slideshow{
-        padding: 40px 0;
+        padding: 50px 0;
+        background: #000;
     }
     .slideshow-container {
         max-width: 1000px;
         position: relative;
         margin: auto;
-        background: #000;
       }
       
 
@@ -307,6 +690,7 @@ button{
       .mySlides{
         max-height: 600px;
         position: relative;
+        background: rgb(20, 20, 92);
       }
       .container-dot{
         padding-top:20px ;
@@ -319,6 +703,7 @@ button{
         width: 100%;
         max-height: 600px;
         vertical-align: middle;
+        filter: drop-shadow(0 4px 8px rgba(0,0,0,.7));
       }
       
       
