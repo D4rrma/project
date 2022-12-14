@@ -50,7 +50,7 @@ body{
 
 @media only screen and (max-width : 1366px){
     .container{
-        background:#0C0B10;
+        background:#000;
     }
     nav{
         z-index: 10;
@@ -62,7 +62,7 @@ body{
         justify-content: space-evenly;
         flex-direction: row;
         align-items: center;
-        background:#0C0B10;
+        background:#000;
     }
 
     .header .logo{
@@ -458,7 +458,7 @@ body{
         height:45px;
         justify-content: center;
         align-items: center;
-        background:#0C0B10;
+        background:#000;
     }
     nav.on{
         background: #333;
@@ -833,7 +833,7 @@ body{
         height:45px;
         justify-content: center;
         align-items: center;
-        background:#0C0B10;
+        background:#000;
     }
     nav.on{
         background: #333;
@@ -966,11 +966,11 @@ body{
     /* homepage */
 
     .container-homepage{
+        margin-top: 45px;
       display: flex;
       flex-direction: column;
     }
     #homepage{
-        margin-top: 45px;
         height:calc(600px + 20vw);
         background: url(img/shri-3Ozm5eOVq_M-unsplash.jpg);
         background-repeat: no-repeat;
