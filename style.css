@@ -686,7 +686,7 @@ body{
         flex: 0 0 33.3%;
     }
     .preview .img:nth-child(2){
-        background: url(img/raphael-nogueira-NvSA7oDcmWU-unsplash.jpg);
+        background-image: image("img/raphael-nogueira-NvSA7oDcmWU-unsplash.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -734,13 +734,13 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    
 
     figure img{
         width: 100%;
         filter: brightness(70%);
         filter: drop-shadow(0 4px 8px rgba(0,0,0,.7));
         transition: all .5s;
-
     }
 
     figure figcaption{
