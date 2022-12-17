@@ -222,7 +222,7 @@ ul li a img{
     position: relative;
     flex-direction: column;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     width: 80%;
 }
 .spec .feature h3{
@@ -230,17 +230,77 @@ ul li a img{
 }
 .spec .feature .feature-content{
     width: 80%;
-    max-height: 0;
-   overflow: hidden;
-   transition: max-height 0.5s ease-out;
-   padding: 0;
+     max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.spec .feature p{
+.spec .feature .feature-content li{
     word-spacing: 1px;
     color: white;
     font-family: helvetica-r;
     font-size: 12px;
+    text-transform: capitalize;
 }
+
+/* switch */
+
+.switch-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.switch-opt{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.switch-opt .switch-img{
+    width: 40%;
+    height: 100px;
+    display: flex;
+    background:rgb(133, 133, 133);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.switch-opt .switch-img button{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+.switch-opt .switch-img p{
+    font-family: helvetica-r;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.switch-opt .switch-img:nth-child(1) button{
+    background: rgb(197, 43, 43);
+}
+.switch-opt .switch-img:nth-child(2) button{
+    background: rgb(13, 72, 184);
+}
+.switch-opt .switch-img:nth-child(3) button{
+    background: rgb(78, 25, 25);
+}
+
+/* switch end */
+
 .spec .keyboard{
     position: relative;
     display: flex;
@@ -297,7 +357,6 @@ ul li a img{
       height: 100%;
       float: left;
       overflow: hidden;
-      border-radius: 10px;
   }
   .img-slider .slider-container .slide img {
     display: block;
@@ -305,6 +364,7 @@ ul li a img{
     height: 100%;
     object-fit: contain;
     filter: brightness(130%);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
   }
   @keyframes slider {
       0%, 25%{left: 0}
